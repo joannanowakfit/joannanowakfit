@@ -33,9 +33,16 @@
     .tab-name {
         background-color: Gold;
         color: MidnightBlue;
-        padding: 0.5em 0.5em 0.5em 0.5em;
+        padding: 0.2em 0.5em 0.2em 0.5em;
         border-radius: 0.3em;
         text-decoration: none;
+        font-weight: bold;
+        display: inline-block;
+        margin-top: 0.3em;
+        font-size: 1.3em;
+    }
+    .tab-pan {
+
     }
     .image {
         position: relative;
@@ -45,22 +52,19 @@
         margin-right: auto;
         width: 50%;
     }
-
-table {
-    width: 80%;
-    table-layout: fixed;
-}
-
-td {
-#   border: 1px solid black;
-}
-
-td img {
-    display: block;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-}
+    table {
+        width: 80%;
+        table-layout: fixed;
+    }
+    td {
+    #   border: 1px solid black;
+    }
+    td img {
+        display: block;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+    }
 </style>
 
