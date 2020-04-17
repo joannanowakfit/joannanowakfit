@@ -1,0 +1,66 @@
+<style>
+    body {
+        background-image: url("logo-cellreset.png");
+        margin-bottom: 10%;
+    }
+    html {
+        height: 110%;
+    }
+    .parag {
+        margin-left: 3%;
+        width: 75%;
+        display: none;
+        text-align: justify;
+    }
+    .parag-show {
+        margin-left: 3%;
+        width: 75%;
+        display: block;
+        text-align: justify;
+    }
+    h2 {
+        background-color: LawnGreen;
+        width: 80%;
+        border-radius: 5px;
+    }
+    h2::before {
+       content: "\02795";
+       float: left;
+       margin-left: 1%;
+       margin-right: 2%;
+       color: DimGray;
+    }
+    .tab-name {
+        background-color: Gold;
+        color: MidnightBlue;
+        padding: 0.5em 0.5em 0.5em 0.5em;
+        border-radius: 0.3em;
+        text-decoration: none;
+    }
+    .image {
+        position: relative;
+        margin: 1%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+table {
+    width: 80%;
+    table-layout: fixed;
+}
+
+td {
+#   border: 1px solid black;
+}
+
+td img {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+</style>
+
