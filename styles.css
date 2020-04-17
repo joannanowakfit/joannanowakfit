@@ -28,7 +28,7 @@
        float: left;
        margin-left: 1%;
        margin-right: 2%;
-       color: DimGray;
+       color: DimGray !important;
     }
     .tab-name {
         background-color: Gold;
