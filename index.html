@@ -1,49 +1,58 @@
 <!DOCTYPE html>
+
+<script type="text/javascript" src="tabs.js"></script>
+<script type="text/javascript" src="tabs-drag.js"></script>
+<script type="text/javascript" src="action-bottom.js"></script>
+
 <html>
     <head>
-          <meta charset="UTF-8">
-            <title>Joanna Nowak</title>
+        <meta charset="UTF-8">
+        <title>Joanna Nowak</title>
+	<link rel="stylesheet" property="stylesheet" href="styles.css">
     </head>
+
     <body>
 
-<h3><div id="tabs"></div></h3>
-<script type="text/javascript" src="tabs.js"></script>
-<script>tabs();</script>
+<nav id="tabs"></nav>
 
-<figure>
-  <img src="joanna-nowak.png" alt="">
-  <figcaption><h1>Joanna Nowak</h1></figcaption>
+<figure class="fig">
+    <img src="joanna-nowak.png" alt="" class="img-cent">
+    <figcaption class="fig-capt"><span class="page-title">Joanna Nowak</span></figcaption>
 </figure>
 
-<h4>+48 666 529 303</h4>
-<h4>E-mail: <a href="mailto:joannan67@gmail.com">joannan67@gmail.com</a></h2>
-<h4>FB: <a href="https://www.facebook.com/joana.goyana.3">Joanna Nowak</a></h4>
-<h4>PM-International: <a href=http://6438073.go4pm.com>6438073.go4pm.com</a></h3>
-<h4>Rejestracja PMI: <a href=http://6438073.pm-quickstart.com>6438073.pm-quickstart.com</a></h3>
-<h4>Sklep FitLine® : <a href=http://6438073.fitline.com>6438073.fitline.com</a></h3>
-<h4>Strona: <a href="https://www.facebook.com/CellReset-z-Asią-i-Madlen-975139695892658/">Fitline CellReset z Asią i Madlen</a></h4>
-<h4>Strona: <a href="https://www.facebook.com/dobraformazasia/">Dobra forma z Asią</a></h4>
-<h4>Strona: <a href="https://pl-pl.facebook.com/go2cellreset">CellRESET Łódź</a></h4>
-<h4>Strona: <a href="https://www.facebook.com/cellRESETOWNIA/">MOJA Przemiana</a></h4>
-<h4>Strona: <a href="https://www.facebook.com/monojonowe/">Monojony dla zdrowia i urody</h4>
+<nav id="act-group-contact" class="act-group"></nav>
+<nav id="act-group-pm" class="act-group"></nav>
+<nav id="act-group-monojony" class="act-group"></nav>
+<nav id="act-group-page" class="act-group"></nav>
 
     </body>
 </html>
 
+<script>
+    window.addEventListener("load", function(){
+        tabs();
+//        dragElement(document.getElementById("tabs"));
+//        dragElement(document.getElementById("mydiv"));
+        actionBottomContact();
+        actionBottomPm();
+        actionBottomMonojony();
+        actionBottomPage();
+    });
+</script>
+
 <style>
     body {
         background-image: url('logo-fitline.png');
-        zoom: 120%;
     }
 
     figure {
-        display: table;
+#        display: table;
     }
 
     figcaption {
-        display: table-caption;
+#        display: table-caption;
         caption-side: bottom;
-        text-align: center;
+        text-align: left;
     }
 </style>
 

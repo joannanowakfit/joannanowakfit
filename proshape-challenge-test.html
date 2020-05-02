@@ -1,20 +1,24 @@
 <!DOCTYPE html>
+
+<script type="text/javascript" src="tabs.js"></script>
+<script type="text/javascript" src="tabs-drag.js"></script>
+<script type="text/javascript" src="action-bottom.js"></script>
+<script type="text/javascript" src="lib-my.js"></script>
+
 <html>
     <head>
         <meta charset="UTF-8">
         <title>Joanna Nowak</title>
         <link rel="stylesheet" property="stylesheet" href="styles.css">
     </head>
+
     <body>
 
-<h3><nav id="tabs"></nav></h3>
-<script type="text/javascript" src="tabs.js"></script>
-<script type="text/javascript" src="lib-my.js"></script>
-<script>tabs();</script>
+<nav id="tabs"></nav>
 
-<h1 id="headA">Wyzwanie Proshape® Challenge</h1>
+<p class="page-title-wrp"><span class="page-title">Wyzwanie Proshape® Challenge</span></p>
 
-<h2 id="headA" onclick="showHide(event)">Przygotuj się na 30-dniowe Shape Challenge (Fit Wyzwanie) z Rolfem Sorgiem</h2>
+<p id="headA" onclick="showHide(event)" class="parag-title"><span class="before">✚</span>Przygotuj się na 30-dniowe Shape Challenge (Fit Wyzwanie) z Rolfem Sorgiem</p>
 
 <p class="parag headA">
 
@@ -29,7 +33,7 @@ Ponadto możesz przesyłać filmy przed/po oraz dodawać opinie bezpośrednio za
 <img src="proshape-challenge-shake.png" class="image">
 </p>
 
-<h2 id="headB" onclick="showHide(event)">FitLine ProShape All-in-1 </h2>
+<p id="headB" onclick="showHide(event)" class="parag-title"><span class="before">✚</span>FitLine ProShape All-in-1 </p>
 
 <h3 class="parag headB">Naturalny smak i zoptymalizowana formułą</h3>
 
@@ -44,7 +48,7 @@ Ekskluzywna, smaczna Stevia i naturalny smak. Teraz ze zoptymalizowaną formuł�
 <img src="proshape-challenge-shake-all.png" class="image">
 </p>
 
-<h2 id="headC" onclick="showHide(event)">FitLine ProShape 2 go</h2>
+<p id="headC" onclick="showHide(event)" class="parag-title"><span class="before">✚</span>FitLine ProShape 2 go</p>
 
 <h3 class="parag headC">Optymalne odżywianie dla wiecznie zajętych</h3>
 
@@ -73,7 +77,7 @@ Opatentowana formuła FitLine ProShape All-in-1, zoptymalizowana formuła, słod
 
 </p>
 
-<h2 id="headD" onclick="showHide(event)">Program FitLine Shape</h2>
+<p id="headD" onclick="showHide(event)" class="parag-title"><span class="before">✚</span>Program FitLine Shape</p>
 
 <p class="parag headD">
 Wyzwanie FitLine Shape z Rolfem Sorgiem to wszystko, czego potrzebujesz. Nie wymaga skomplikowanego liczenia kalorii. Jest proste i łatwe w realizacji. Ciesz się z postępów i coraz lepszych wyników każdego dnia.
@@ -92,7 +96,7 @@ Wypróbuj pyszne, zdrowe i łatwe w realizacji przepisy na śniadanie i lunch, k
 </li>
 </ul>
 
-<h2 id="headE" onclick="showHide(event)">Kuchnia FitLine</h2>
+<p id="headE" onclick="showHide(event)" class="parag-title"><span class="before">✚</span>Kuchnia FitLine</p>
 
 <p class="parag headE">
 
@@ -105,7 +109,7 @@ Kto powiedział, że zdrowe jedzenie musi być nudne? W ramach 30-dniowego Wyzwa
 <a class="tab-name" href="https://pm-international.com/blog/lunch-recipes-2/">Przepisy na drugie śniadanie</a>
 </p>
 
-<h2 id="headF" onclick="showHide(event)">Trener FitLine</h2>
+<p id="headF" onclick="showHide(event)" class="parag-title"><span class="before">✚</span>Trener FitLine</p>
 
 <p class="parag headF">
 
@@ -123,7 +127,7 @@ Proste: dzięki ćwiczeniom 3 razy w tygodniu poprawisz wyniki, wzmocnisz organi
 
 
 
-<h2 id="headG" onclick="showHide(event)">FitLine Total Look</h2>
+<p id="headG" onclick="showHide(event)" class="parag-title"><span class="before">✚</span>FitLine Total Look</p>
 
 <p class="parag headG">
 
@@ -135,11 +139,29 @@ Dobry wygląd podczas treningu wprawia w dobry nastrój. Odkryj kolekcję odzie�
 
 </p>
 
+<nav id="act-group-contact" class="act-group"></nav>
+<nav id="act-group-pm" class="act-group"></nav>
+<nav id="act-group-monojony" class="act-group"></nav>
+<nav id="act-group-page" class="act-group"></nav>
+
     </body>
 </html>
 
+<script>
+    window.addEventListener("load", function(){
+        tabs();
+//        dragElement(document.getElementById("tabs"));
+//        dragElement(document.getElementById("mydiv"));
+        actionBottomContact();
+        actionBottomPm();
+        actionBottomMonojony();
+        actionBottomPage();
+    });
+</script>
+
 <style>
     body {
-       background-image: url("proshape-challenge-rolf-sorg.png");
+        background-image: url("proshape-challenge-rolf-sorg.png");
     }
 </style>
+
