@@ -9,7 +9,7 @@
     }
     .parag {
         margin-left: 3%;
-        width: 100%;
+        width: 90%;
         display: none;
         text-align: justify;
     }
@@ -23,35 +23,75 @@
         font-size: 1.5em;
     }
     h2 {
-        background-color: LawnGreen;
+        background-color: PaleGreen;
         width: 100%;
-        border-radius: 5px;
+        border-radius: 0px;
         font-size: 1.3em;
     }
-    h2::before {
-       content: "\02795";
+    .before {
        float: left;
        margin-left: 0.7em;
        margin-right: 1em;
-       color: DimGray !important;
+       color: DimGray;
+       font-weight: 100; 
        font-size: 0.9em;
     }
+    .before-act {
+       float: left;
+       margin-left: 0.7em;
+       margin-right: 1em;
+       color: White;
+    }
+#   h2::before {
+#      content: "\02795";
+#      float: left;
+#      margin-left: 0.7em;
+#      margin-right: 1em;
+#      color: DimGray !important;
+#      font-size: 0.9em;
+#   }
     h3 {
        font-size 1.2em;
     }
     h4 {
        font-size 1.1em;
     }
+    .icon-svg {
+        filter: invert(100%);
+    }
     .tab-name {
-        background-color: Gold;
-        color: MidnightBlue;
+        background-color: DarkOrange;
+        color: Black;
         padding: 0.2em 0.5em 0.2em 0.5em;
-        border-radius: 0.3em;
+        border-radius: 0;
         text-decoration: none;
-        font-weight: bold;
+        font-weight: normal;
+        display: inline-block;
+#        white-space: nowrap;
+        margin-top: 0.3em;
+        margin-right: 0.1em;
+        margin-left: 0.1em;
+        font-size: 1.5em;
+    }
+    .act-name {
+#        background-color: MidnightBlue;
+        background-color: MediumSlateBlue;
+        color: Black;
+        padding: 0.2em 0.5em 0.2em 0.5em;
+#        border-radius: 0.3em;
+        text-decoration: none;
+#        font-weight: bold;
         display: inline-block;
         margin-top: 0.3em;
+        margin-right: 0.1em;
+        margin-left: 0.1em;
         font-size: 1.5em;
+    }
+    .act-group {
+#        background-color: DarkSeaGreen;
+        background-color: Gainsboro;
+        padding: 1em;
+        margin: 0.5em;
     }
     .tab-pan {
 
@@ -63,6 +103,38 @@
         margin-left: auto;
         margin-right: auto;
         width: 25em;
+    }
+    .fig {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .img-cent {
+        width: 25em;
+    }
+    .fig-capt {
+        text-align: center;
+        font-size: 1.5em;
+    }
+    .page-title {
+        font-size: 2em;
+        font-weight: bold;
+        background-color: LightGreen;
+        padding: 0.2em;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    .page-title-wrp {
+        text-align: center;
+        margin: 2em;
+    }
+    .parag-title {
+        font-weight: normal;
+        background-color: PaleGreen;
+        width: 100%;
+        border-radius: 0px;
+        font-size: 1.3em;
     }
     table {
         width: 100%;
@@ -78,5 +150,16 @@
         margin-right: auto;
         position: relative;
     }
+    #tabs-off {
+      position: absolute;
+      z-index: 9999;
+      background-color: #f1f1f1;
+      border: 1px solid #d3d3d3;
+      text-align: center;
+      cursor: move
+      display: inline-block;
+      white-space: nowrap;
+    }
+
 </style>
 
